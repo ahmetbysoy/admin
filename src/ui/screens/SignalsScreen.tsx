@@ -1,5 +1,5 @@
-import { useUiStore } from '../../store/index.js'
-import type { SignalEvent } from '../../types/index.js'
+import { useUiStore } from '../../store/index'
+import type { SignalEvent } from '../../types/index'
 import './SignalsScreen.css'
 
 function SignalCard({ event }: { event: SignalEvent }) {

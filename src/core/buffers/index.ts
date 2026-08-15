@@ -1,4 +1,4 @@
-import type { NormalizedTrade, NormalizedDepth, NormalizedMark, Candle } from '../../types/index.js';
+import type { NormalizedTrade, NormalizedDepth, NormalizedMark, Candle } from '../../types/index';
 
 // ─── Generic Ring Buffer ───────────────────────────────────────────────────
 

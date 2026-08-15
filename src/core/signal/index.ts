@@ -1,4 +1,4 @@
-import type { SignalEvent, SignalSide, SignalState, IndicatorValues } from '../../types/index.js';
+import type { SignalEvent, SignalSide, SignalState, IndicatorValues } from '../../types/index';
 
 // ─── Sinyal Motoru Durumu ─────────────────────────────────────────────────
 

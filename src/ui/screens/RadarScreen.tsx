@@ -1,7 +1,7 @@
-import { useDataStore, useUiStore } from '../../store/index.js'
-import { RadarGauge } from '../components/RadarGauge.js'
-import { MeterBar } from '../components/MeterBar.js'
-import { useSettingsStore } from '../../store/index.js'
+import { useDataStore, useUiStore } from '../../store/index'
+import { RadarGauge } from '../components/RadarGauge'
+import { MeterBar } from '../components/MeterBar'
+import { useSettingsStore } from '../../store/index'
 import './RadarScreen.css'
 
 function LastSignalStrip() {

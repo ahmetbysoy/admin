@@ -10,8 +10,8 @@ import {
   type Time,
   type SeriesMarker,
 } from 'lightweight-charts'
-import { useDataStore, useUiStore } from '../../store/index.js'
-import type { Candle, SignalEvent } from '../../types/index.js'
+import { useDataStore, useUiStore } from '../../store/index'
+import type { Candle, SignalEvent } from '../../types/index'
 import './ChartScreen.css'
 
 function toChartCandle(c: Candle): CandlestickData {

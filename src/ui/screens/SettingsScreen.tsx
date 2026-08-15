@@ -1,5 +1,5 @@
-import { useSettingsStore, useUiStore } from '../../store/index.js'
-import type { Settings, SignalWeights } from '../../types/index.js'
+import { useSettingsStore, useUiStore } from '../../store/index'
+import type { Settings, SignalWeights } from '../../types/index'
 import './SettingsScreen.css'
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {

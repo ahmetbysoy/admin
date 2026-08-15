@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react'
-import { useDataStore, useUiStore } from '../../store/index.js'
+import { useDataStore, useUiStore } from '../../store/index'
 import './RadarGauge.css'
 
 const TWO_PI = Math.PI * 2

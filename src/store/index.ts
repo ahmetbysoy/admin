@@ -6,9 +6,9 @@ import type {
   SignalEvent,
   Settings,
   Candle,
-} from '../types/index.js';
-import { DEFAULT_SETTINGS } from '../types/index.js';
-import type { SignalState } from '../core/signal/index.js';
+} from '../types/index';
+import { DEFAULT_SETTINGS } from '../types/index';
+import type { SignalState } from '../core/signal/index';
 
 // ─── Data Store (≤10Hz tick verisi) ─────────────────────────────────────
 

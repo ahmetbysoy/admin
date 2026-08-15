@@ -7,17 +7,17 @@ import {
   std,
   zscore,
   emaStep,
-} from '../core/indicators/index.js'
-import type { NormalizedTrade, NormalizedDepth } from '../types/index.js'
+} from '../core/indicators/index'
+import type { NormalizedTrade, NormalizedDepth } from '../types/index'
 import {
   processTick,
   createSignalEngineState,
   appendSignal,
   loadSignalLog,
   saveSignalLog,
-} from '../core/signal/index.js'
-import type { IndicatorValues } from '../types/index.js'
-import { RingBuffer, CandleAggregator } from '../core/buffers/index.js'
+} from '../core/signal/index'
+import type { IndicatorValues } from '../types/index'
+import { RingBuffer, CandleAggregator } from '../core/buffers/index'
 
 // ─── Yardımcı ────────────────────────────────────────────────────────────
 

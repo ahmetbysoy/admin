@@ -1,6 +1,6 @@
-import type { WsAdapter, WsAdapterHandlers, WsStatus, NormalizedEvent, DataSource } from '../../types/index.js';
-import { OkxAdapter } from './OkxAdapter.js';
-import { BinanceAdapter } from './BinanceAdapter.js';
+import type { WsAdapter, WsAdapterHandlers, WsStatus, NormalizedEvent, DataSource } from '../../types/index';
+import { OkxAdapter } from './OkxAdapter';
+import { BinanceAdapter } from './BinanceAdapter';
 
 // ─── Yardımcılar ──────────────────────────────────────────────────────────
 

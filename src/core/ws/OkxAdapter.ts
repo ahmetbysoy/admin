@@ -4,7 +4,7 @@ import type {
   NormalizedTrade,
   NormalizedDepth,
   NormalizedMark,
-} from '../../types/index.js';
+} from '../../types/index';
 
 // ─── OKX raw mesaj tipleri ────────────────────────────────────────────────
 

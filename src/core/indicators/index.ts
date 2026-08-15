@@ -1,5 +1,5 @@
-import type { NormalizedTrade, NormalizedDepth, IndicatorValues } from '../../types/index.js';
-import type { Buffers } from '../buffers/index.js';
+import type { NormalizedTrade, NormalizedDepth, IndicatorValues } from '../../types/index';
+import type { Buffers } from '../buffers/index';
 
 // ─── Matematiksel yardımcılar ─────────────────────────────────────────────
 

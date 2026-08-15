@@ -1,12 +1,12 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { useUiStore, useSettingsStore } from '../store/index.js'
-import { WsEngine } from './WsEngine.js'
-import { Header } from '../ui/components/Header.js'
-import { TabBar } from '../ui/components/TabBar.js'
-import { RadarScreen } from '../ui/screens/RadarScreen.js'
-import { ChartScreen } from '../ui/screens/ChartScreen.js'
-import { SignalsScreen } from '../ui/screens/SignalsScreen.js'
-import { SettingsScreen } from '../ui/screens/SettingsScreen.js'
+import { useUiStore, useSettingsStore } from '../store/index'
+import { WsEngine } from './WsEngine'
+import { Header } from '../ui/components/Header'
+import { TabBar } from '../ui/components/TabBar'
+import { RadarScreen } from '../ui/screens/RadarScreen'
+import { ChartScreen } from '../ui/screens/ChartScreen'
+import { SignalsScreen } from '../ui/screens/SignalsScreen'
+import { SettingsScreen } from '../ui/screens/SettingsScreen'
 
 const screenVariants = {
   initial: { opacity: 0, y: 12 },

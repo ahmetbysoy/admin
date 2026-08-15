@@ -1,5 +1,5 @@
-import { useUiStore } from '../../store/index.js'
-import type { TabId } from '../../store/index.js'
+import { useUiStore } from '../../store/index'
+import type { TabId } from '../../store/index'
 import './TabBar.css'
 
 const TABS: { id: TabId; label: string; icon: string }[] = [

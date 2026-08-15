@@ -1,6 +1,6 @@
-import { useDataStore, useUiStore } from '../../store/index.js'
-import { useSettingsStore } from '../../store/index.js'
-import type { WsStatus } from '../../types/index.js'
+import { useDataStore, useUiStore } from '../../store/index'
+import { useSettingsStore } from '../../store/index'
+import type { WsStatus } from '../../types/index'
 import './Header.css'
 
 function ConnectionPill({ status, attempt }: { status: WsStatus; attempt: number }) {

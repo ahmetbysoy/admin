@@ -1,17 +1,17 @@
 import { useEffect, useRef } from 'react'
-import { WsManager } from '../core/ws/WsManager.js'
-import { createBuffers } from '../core/buffers/index.js'
-import { computeTick, createTickState } from '../core/indicators/index.js'
+import { WsManager } from '../core/ws/WsManager'
+import { createBuffers } from '../core/buffers/index'
+import { computeTick, createTickState } from '../core/indicators/index'
 import {
   createSignalEngineState,
   processTick,
   loadSignalLog,
   appendSignal,
-} from '../core/signal/index.js'
-import { useDataStore, useUiStore, useSettingsStore } from '../store/index.js'
-import type { NormalizedEvent } from '../types/index.js'
-import type { SignalEngineState } from '../core/signal/index.js'
-import type { TickState } from '../core/indicators/index.js'
+} from '../core/signal/index'
+import { useDataStore, useUiStore, useSettingsStore } from '../store/index'
+import type { NormalizedEvent } from '../types/index'
+import type { SignalEngineState } from '../core/signal/index'
+import type { TickState } from '../core/indicators/index'
 
 /**
  * WsEngine: WSS bağlantısı + 10Hz tick döngüsünü yönetir.
