@@ -1,4 +1,34 @@
+# Node
 node_modules
+dist
+dist-ssr
+*.local
+package-lock.json
+
+# Cache
+.npm
+.npm-cache
+.cache
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test
+coverage
 dist
 dist-ssr
 *.local

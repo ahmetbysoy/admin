@@ -1,0 +1,40 @@
+/* Signal Radar — Design Tokens (docs/03) */
+:root {
+  /* Renkler */
+  --bg:        #070B14;
+  --surface:   #0F1626;
+  --surface-2: #16203A;
+  --border:    #1E2A44;
+  --text:      #E6EDF7;
+  --muted:     #7C8DB0;
+  --green:     #34D399;
+  --red:       #F87171;
+  --amber:     #FBBF24;
+  --cyan:      #22D3EE;
+  --violet:    #A78BFA;
+  --glow-buy:  rgba(52, 211, 153, .35);
+  --glow-sell: rgba(248, 113, 113, .35);
+
+  /* Tipografi */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Ölçüler */
+  --radius: 16px;
+  --radius-sm: 8px;
+  --gap: 16px;
+  --gap-sm: 8px;
+  --tabbar-h: 64px;
+  --header-h: 56px;
+
+  /* Gölgeler */
+  --shadow-card: 0 4px 24px rgba(0,0,0,.4);
+  --shadow-glow-buy: 0 0 20px var(--glow-buy);
+  --shadow-glow-sell: 0 0 20px var(--glow-sell);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --animation-speed: 0;
+  }
+}

@@ -1,0 +1,135 @@
+.app-header {
+  height: var(--header-h);
+  min-height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--gap);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  gap: var(--gap-sm);
+}
+
+/* Bağlantı pili */
+.conn-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  border: 1px solid;
+  letter-spacing: 0.04em;
+  min-width: 80px;
+}
+
+.conn-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.conn-pill--live {
+  color: var(--green);
+  border-color: var(--green);
+  background: rgba(52,211,153,.08);
+}
+.conn-pill--live .conn-dot {
+  background: var(--green);
+  animation: pulse-green 1.5s ease-in-out infinite;
+}
+
+.conn-pill--connecting {
+  color: var(--amber);
+  border-color: var(--amber);
+  background: rgba(251,191,36,.08);
+}
+.conn-pill--connecting .conn-dot {
+  background: var(--amber);
+  animation: blink 0.8s step-end infinite;
+}
+
+.conn-pill--reconnecting {
+  color: var(--amber);
+  border-color: var(--amber);
+  background: rgba(251,191,36,.08);
+}
+.conn-pill--reconnecting .conn-dot {
+  background: var(--amber);
+  animation: blink 0.5s step-end infinite;
+}
+
+.conn-pill--offline {
+  color: var(--red);
+  border-color: var(--red);
+  background: rgba(248,113,113,.08);
+}
+.conn-pill--offline .conn-dot {
+  background: var(--red);
+}
+
+/* Orta: sembol + fiyat */
+.header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.header-symbol {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.price-ticker {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cyan);
+  transition: color 0.2s;
+}
+.price-ticker--up { color: var(--green); }
+.price-ticker--down { color: var(--red); }
+
+.price-unit {
+  font-size: 0.65em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Sağ */
+.header-right {
+  min-width: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.source-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Animasyonlar */
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 var(--glow-buy); opacity: 1; }
+  50% { box-shadow: 0 0 0 4px transparent; opacity: 0.7; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conn-dot { animation: none !important; }
+}

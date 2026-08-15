@@ -17,7 +17,7 @@ RSI, MACD, EMA gibi hazır indikatörler **YOK**. Bunun yerine ham piyasa verisi
 ## Durum
 
 - [x] **Faz 0** — Blueprint, gereksinimler, tasarım, indikatör matematiği (`docs/`)
-- [ ] **Faz 1** — React + Vite uygulaması (`docs/05-phase1-todo-prompt.md` içindeki prompt ile üretilir)
+- [x] **Faz 1** — React + Vite uygulaması: WSS akışı, CVD/OBI/Velocity, sinyal motoru, 4 ekran, animasyonlar ✅
 - [ ] **Faz 2** — Web Worker, çoklu sembol, backtest, push bildirim (planlandı)
 
 ## Dokümanlar
@@ -31,12 +31,35 @@ RSI, MACD, EMA gibi hazır indikatörler **YOK**. Bunun yerine ham piyasa verisi
 | `docs/05-phase1-todo-prompt.md` | Faz 1 kod üretimi için kopyala-yapıştır prompt + görev listesi |
 | `docs/06-github-push.md` | Repoyu GitHub'a yayınlama adımları |
 
-## Hızlı başlangıç (Faz 1 tamamlanınca)
+## Hızlı başlangıç
 
 ```bash
-npm install
+# Bağımlılıkları kur (peer dependency uyarıları yoksayılabilir)
+npm install --legacy-peer-deps
+
+# Geliştirme sunucusu (http://localhost:5173)
 npm run dev
+
+# Test (Vitest)
+npm test
+
+# Üretim build
+npm run build
+npm run preview
 ```
+
+### Fontlar
+
+Self-hosted fontlar için `public/fonts/` klasörüne ekleyin:
+- `SpaceGrotesk-SemiBold.woff2`
+- `JetBrainsMono-Medium.woff2`
+- `JetBrainsMono-Bold.woff2`
+
+Yoksa sistem fontları fallback olarak çalışır (system-ui, ui-monospace).
+
+### Canlı Veri
+
+Uygulama başladığında **OKX** veya **Binance** public WebSocket'inden BTC-USDT verisi çeker. Ayarlar ekranından kaynak değiştirilebilir. İnternet bağlantısı gereklidir.
 
 ## Uyarı
 

@@ -1,0 +1,154 @@
+.signals-screen {
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.signals-count {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-align: right;
+}
+
+.signals-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.signal-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.signal-card--buy {
+  border-color: rgba(52,211,153,.25);
+}
+.signal-card--sell {
+  border-color: rgba(248,113,113,.25);
+}
+
+.sc-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sc-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.sc-badge--buy {
+  background: rgba(52,211,153,.15);
+  color: var(--green);
+  border: 1px solid rgba(52,211,153,.3);
+}
+
+.sc-badge--sell {
+  background: rgba(248,113,113,.15);
+  color: var(--red);
+  border: 1px solid rgba(248,113,113,.3);
+}
+
+.sc-time {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.sc-price {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+/* Güven çubuğu */
+.sc-confidence {
+  position: relative;
+  height: 6px;
+  background: var(--surface-2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sc-confidence-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.sc-confidence-label {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+}
+
+/* Skor dökümü */
+.sc-scores {
+  display: flex;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.sc-scores b {
+  color: var(--text);
+}
+
+/* Boş durum */
+.signals-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 60px var(--gap);
+  color: var(--muted);
+}
+
+.signals-empty-icon {
+  font-size: 3rem;
+  animation: slow-pulse 3s ease-in-out infinite;
+}
+
+.signals-empty p {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.signals-empty-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted) !important;
+}
+
+@keyframes slow-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signals-empty-icon { animation: none; }
+  .sc-confidence-fill { transition: none; }
+}
